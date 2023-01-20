@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- This is an html comment -->
+<html lang = "en">
+	<head>
+		<!-- Try to get a custom URL -->
+		<meta charset="UTF-8">
+		<title>Math - Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="Math_icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Math_icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Math_icon/favicon-16x16.png">
+		<link rel="manifest" href="Math_icon/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			Math
+		</div>
+		<div class = "sticky">
+			<div class = "content border">
+			<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		<div class = "empty" id = "MathBG">
+		<a href = "#Home"><img src = "Images/arrow.gif" class = "arrow" alt = "arrow"></a>
+		</div>
+		<div class = "contentWrap border" id = "Home">
+			<div class = "header revealer">
+			<br>
+				Mathematics: 
+			</div>
+			<p class = hidden>
+				<Strong>Taught by Mr. Regele.</Strong>
+			</p>
+			<br>
+			<p>
+				Advanced Mathematical Modeling is a course that investigates how mathematics can be used to solve and model problems which do not have one definite solution. It differs from standard math courses taught at highschools since it doesn’t follow a textbook and it is not meant to prepare for a standardized test. Rather, we work on thinking like a mathematician thinks, and understanding the core roots of the subject. By dealing with many unfamiliar and abstract problems, we train ourselves on how we should think about problems, rather than just how to solve them. In addition to this course, I am self-studying AP Calculus BC and participating in the MAMS Math Team.
+				<br>
+				<br>
+				<i>Click the Buttons to Jump Around!</i>	
+			</p>
+		</div>
+		
+		
+		<div class = "contentWrap border macroTitle" id = "WorkSamples">
+			<p class = "titleText">
+			Work Samples
+			<br>
+			<br>
+			<a href = "#HiMCM" class = shifter>HiMCM</a>
+			&nbsp;
+			<a href = "#IMMC" class = shifter>IMMC</a>
+			&nbsp;
+			<a href = "#EasingTraffic" class = shifter>Easing Traffic</a>
+			</p>
+			</div>
+			
+		<div class = "parent"> 
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/HiMCM.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "HiMCM">
+			<p>High School Mathematical Contest in Modeling (HiMCM)
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = shortDescription>HiMCM is a mathematical modeling competition given internationally, with two problems for teams to pick from. At MAMS, we formed teams of 4 and were given 36 continuous hours to devote completely to the problem of choice. Our group chose a problem based on finding the best summer job for a highschool student. We chose the problem since it was very open-ended and allowed us to use a lot of creativity in our solution, which we believe is unique. Using a large online database of jobs and our proprietary questionnaire, we were able to create a working model that could be used in the real world. Our team was given the designation of Outstanding and we were given the National Council of Teachers of Mathematics Award.
+		<br>
+		<a href = "Elements/HiMCM results.pdf" class = 'redLink'>(results here) </a>  
+		</p>
+		</div>
+		</div>
+		
+		<div class = "parent">
+		<div class = "contentWrap border displayRight">
+			<iframe src="Elements/IMMC_10656.pdf"></iframe>
+		</div>
+		<div class = "border infoLeft miniTitle" id = "IMMC">
+			<p>International Mathematical Modeling Challenge (IMMC)
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoLeft">
+		<p class = "shortDescription">In the IMMC, teams of high school or undergraduate students are given a week to solve a mathematical modeling problem, similar to the HiMCM. In this contest, there are multiple problems to be addressed, all linked by a similar theme. For our year (2021), we were tasked with determining the “Greatest of All Time (GOAT)” in a variety of sports, both individual and team-oriented. Our team was selected by the U.S. panel of judges (results here) to represent our nation in the final round of judging, where we competed against 26 other nations. In the final round of judging, we were given the designation of Honorable Mention. 
+		<br>
+		<a href = "Elements/IMMC results.pdf" class = 'redLink'>(results here) </a>  
+		</p>
+		</div>
+		</div>
+		
+		<div class = "parent">
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/easingTraffic.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "EasingTraffic">
+			<p>Easing Traffic
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = "shortDescription">In this project we were tasked with generating a mathematical model for a problem having to do with traffic flow and speed limits, as seen at the top of the document. The purpose of this project was to help us practice with Wolfram Mathematica, a powerful modeling software. The document presents four models, with each one improving on the last in terms of accuracy and applicability. Each model comes with a graphical representation of the data generated, demonstrating the utility of Mathematica.
+		</p>
+		</div>
+		</div>
+	</body>
+</html>

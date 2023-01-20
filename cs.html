@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- This is an html comment -->
+<html lang = "en">
+	<head>
+		<!-- Try to get a custom URL -->
+		<meta charset="UTF-8">
+		<title>CS - Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="CS_icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="CS_icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="CS_icon/favicon-16x16.png">
+		<link rel="manifest" href="CS_icon/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			Computer Science
+		</div>
+		<div class = "sticky">
+			<div class = "content border"> 
+				<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		<div class = "empty" id = "CSBG">
+		<a href = "#Home"><img src = "Images/arrow.gif" class = "arrow" alt = "arrow"></a>
+		</div>
+		<div class = "contentWrap border" id = "Home">
+			<div class = "header revealer">
+			<br>
+				Computer Science:
+			</div>
+			<p class = hidden>
+				<Strong>Taught by Mrs. Taricco.</Strong>
+			</p>
+			<br>
+			<p>
+				Computer Science at Mass Academy follows an accelerated course in JAVA that is sufficient for taking the AP Computer Science A Exam. Since I have already taken the exam I am part of the advanced track, where I am working with another student on a project that investigates new areas of Computer Science that we haven’t explored yet. Later in the year we work on Apps for Good, which is a project dedicated to coding apps to help the community. Throughout the year, I have been working on the project and have been improving my skills in JAVA, Python, machine learning, and more.
+			<br>
+			<br>
+			<i>Click the Buttons to Jump Around!</i>	
+			</p>
+		</div>
+		
+		<div class = "contentWrap border macroTitle" id = "WorkSamples">
+			<p class = "titleText">
+			Work Samples
+			<br>
+			<br>
+			<a href = "#AFG" class = shifter>Apps for Good</a>
+			&nbsp;
+			<a href = "#Project" class = shifter>CS Project</a>
+			&nbsp;
+			<a href = "#Problem" class = shifter>Agram</a>
+			</p>
+			</div>
+			
+			
+			<div class = "parent"> 
+		<div class = "contentWrap border displayRight">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/4b-9B0hKids" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class = "border infoLeft miniTitle" id = "AFG">
+			<p>Apps for Good
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		
+		<div class = "contentWrap border infoLeft">
+		<p class = "shortDescription">During the last few months of the year, we worked on our final CS assignment for the year - a group project called Apps for Good. The project tasked us with creating an app or website that could serve communities, all while teaching us the steps that go into development. Myself, Justin Wang, and Karina Sargent developed Rkhive, a Mass Academy-specific interactive repository containing crucial information on the past and present students, faculty, alumni, and staff of our school. In the video to the right, we explain more in depth the project, its motivations, and provide some demonstrations. I specifically focused on the backend aspect of Rkhive, finding ways to funnel data from our school in and out of the site. Take a look at the video to learn more!
+		</p>
+		</div>
+		</div>
+		
+		<br>
+		<div class = "csCenter border">
+			<p class = "csBox">
+				Problem
+			</p>
+			<p>
+			Over the past year, the COVID-19 pandemic has brought tremendous challenges to the Massachusetts Academy of Math and Science. The absence of regular in-person classes has created a disconnect between new students and the school’s history and culture. Many other challenges to mental health, including demotivation and lack of socialization have also limited the interactive experience of attending the school. 
+			</p>
+		</div>
+		<br>
+		<div class = "csCenter border">
+			<p class = "csBox">
+				Description of the app and MVP
+			</p>
+			<p>
+			The Minimum Viable Product (MVP) of Rkhive consists of an interactive yearbook from the Class of 2021 onwards, with the ability to include information about every student at Mass Academy. Students input data through a Google Form, which allows editing of information after initial publishing. Each profile consists of an image, personal description, and quote, as well as details such as a student’s favorite class and section. 
+
+<br><br>The app also contains an interactive alumni page, which includes updatable alumni profiles from every student with college and career information, opportunities or advice to current students, and contact information. In the future, we hope to populate the alumni section with previous classes as well as our own. 
+			
+			<br><br> Rkhive is built on HTML, CSS, and Javascript. It utilizes Firebase, a Google service for database management. In the MVP, an adaptive yearbook page is built to contain the images, short descriptions, favorite classes, sections, and quotes of each student in a class. Classes can be navigated easily, and the app’s scripts will automatically change the HTML on the page and fill it with the proper data. This also makes adding a new year to the site very simple, as it avoids making an entirely new HTML page. 
+			</p>
+		</div>
+		
+			<br>
+			<div class = "parent"> 
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/ProjectProposal.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "Project">
+			<p>CS Project
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = "shortDescription"> As mentioned before, the CS project done by the advanced track is for investigating new topics and creating something with that new knowledge. Thus, my partner Karthik and I are learning about web scraping, scripts, data management, and machine learning in our project. We hope to create a tool that can listen to classical piano music and identify the genre, time period, and composer of that piece. This project came from our mutual love for classical music and our combined interest in machine learning. So far, we have completed the data collection, conversion, and compression process, and our initial machine learning model is ready to be trained!
+		</p>
+		</div>
+		</div>
+		
+		<div class = "parent"> 
+		<div class = "contentWrap border displayRight">
+			<iframe src="Elements/AgramSolution.pdf"></iframe>
+		</div>
+		<div class = "border infoLeft miniTitle" id = "Problem">
+			<p>Agram
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoLeft">
+		<p class = "shortDescription">Towards the beginning of the year, the advanced students were given a few problems from the American Computer Science League to try and solve. I chose this problem, Agram, which simulates a card game with the same name. My solution, done in JAVA, is shown. This was a really fun problem to do and helped me prepare for the real ACSL problems that we will be doing!
+		</p>
+		</div>
+		</div>
+		
+	
+		
+	
+			
+	</body>
+</html>

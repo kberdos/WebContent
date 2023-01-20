@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="favicon_io/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			The Official Website of Kaz Erdos
+		</div>
+		<div class = 'sticky'>
+			<div class = "content border"> 
+				<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		<div class = "contentWrap border">
+			<div class = "header revealer">
+				Home Page:
+			</div>
+			<p class = hidden>
+				<Strong>Learn more about me.</Strong>
+			</p>
+			<br>
+				<p>Welcome! My name is Kazuya (Kaz) Erdos and this is my personal website. 
+				Click through the tabs at the top to navigate! </p>
+			
+		</div>
+		
+		
+		
+		<div class = "contentWrap border">
+				<div class = "header revealer">
+					See my life at a glance:
+				</div>
+				<p class = hidden>
+					<strong>Hover over to learn more.</strong>
+				</p>
+			<div class = "wrapper">
+				<img class = "galleryImage g1 border" alt = "Piano Photo" src= "Images/playing.jpg">
+				<img class = "galleryImage g2 border" alt = "Running Photo" src= "Images/Running.jpg">
+				<img class = "galleryImage g3 border" alt = "Math Team Photo" src= "Images/Math_team.jpg_large">
+				<img class = "galleryImage g4 border" alt = "Pi Day photo" src= "Images/pi_day.jpg">
+				<img class = "galleryImage g5 border" alt = "Relay team with medals" src= "Images/4x4_relay.jpg">
+				<br>
+				<div class = "contentHover t1 border">
+				Playing the piano at the NEPTA Piano Recital.
+				</div>
+				<div class = "contentHover t2 border">
+				An image of me finishing strong for the 400m dash.
+				</div>
+				<div class = "contentHover t3 border">
+				A team photo of the Freshman Math Team at AMSA.
+				</div>
+				<div class = "contentHover t4 border">
+				The first math competition I ever competed in.
+				</div>
+				<div class = "contentHover t5 border">
+				The AMSA 4x400m Relay Team.
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

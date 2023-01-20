@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- This is an html comment -->
+<html lang = "en">
+	<head>
+		<!-- Try to get a custom URL -->
+		<meta charset="UTF-8">
+		<title>STEM II - Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="STEM_icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="STEM_icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="STEM_icon/favicon-16x16.png">
+		<link rel="manifest" href="STEM_icon/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			STEM II
+		</div>
+		<div class = "sticky">
+			<div class = "content border"> 
+				<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "contentWrap border">
+			<div class = "header revealer">
+				STEM II:
+			</div>
+			<p class = hidden>
+				<Strong>Taught by Dr. Crowthers.</Strong>
+			</p>
+			<br>
+			<p>
+				STEM II is a group project that takes place over the second half of the year. In this project, groups are tasked with creating an assistive technology device for elders or people with impairments. Throughout this project, groups are tasked with brainstorming, designing, prototyping, and eventually presenting their final designs in a fair format.  
+			</p>
+		</div>
+		
+		<br>
+		
+		<div class = "stem2Center border">
+			<p class = "stem2Box">
+				Problem Statement
+			</p>
+			<p>
+			Over 12 million people in the US suffer from some form of visual impairment, with over 1
+million being blind. Studies have shown that blind people suffer from a lower quality of life,
+mainly due to a lack of ability to read many things, such as books or websites.
+<br><br>
+While there currently exist options for reading large amounts of Braille, such as refreshable Braille displays, these devices are very costly, averaging around $2000 each. Thus, many people with visual impairments or blindness do not have access to technologies for reading Braille from digit inputs. Other alternatives include Braille books, which are bulky, expensive, and limited in selection. Thus there is a need for an affordable device which can display Braille from a digital input in a refreshable manner. 
+			</p>
+		</div>
+			
+		<br>
+		
+		<div class = "stem2Center border">
+			<p class = "stem2Box">
+				Design Approach
+			</p>
+			<p>
+			In our design, we sought to replace the method of extending and retracting Braille dots with haptic feedback sourced from miniature vibration motors. This would allow for a cheaper device that could still produce refreshable outputs. Leading up to our final designs, we first attempted to engineer a frame for our Braille cell that could dampen and isolate vibrations, so that each Braille dot’s haptic feedback could be discernible. 
+<br><br>
+Our design progressed from a wooden slab with embedded paper clips representing the Braille dots, to a rubber sheet housed in a wooden frame with more robust steel rods, to finally a fully-encapsulated 3D-printed frame with a rubber sheet containing rubber grommets that could fully isolate the vibrations. 
+<br><br>
+For the software, we were able to attach a Raspberry Pi to our device, which is able to run Linux Shell Scripts, as well as Python Scripts. Combined with an open-source grade 2 Braille translation software, known as Liblouis, our scripts are able to take in digital input and send haptic feedback to the user through the device.
+			</p>
+		</div>
+		
+		<br>
+		
+		<div class = "contentWrap border">
+			<p>
+				Shown are three stages of our design progress, with our final design shown to the right. 
+			</p>
+			<div class = "wrapper">
+				
+				<img class = "galleryImage g1 border" alt = "Wooden" src= "Images/wooden.png">
+				<img class = "galleryImage g2 border" alt = "Rubber" src= "Images/rubber.jpg">
+				<img class = "galleryImage g3 border" alt = "Printed" src= "Images/printed.png">
+				<br>
+				<div class = "contentHover t1 border">
+				Our first prototype, made of wood.
+				</div>
+				<div class = "contentHover t2 border">
+				Our second prototype, made with rubber.
+				</div>
+				<div class = "contentHover t3 border">
+				Our final device, 3D printed. 
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		
+		<div class = "stem2Center border">
+			<p class = "stem2Box">
+				STEM II Fair Poster
+			</p>
+			<p class = "phrase">
+			Attached is our poster for the STEM II Fair. If the image is not loading, you can find it <a href = "Elements/stem2Poster.pdf" class = redLink>here</a>
+			</p>
+			<iframe src="Elements/stem2Poster.pdf"></iframe>
+		</div>
+		
+		<br>
+		
+		<div class = "stem2Center border">
+			<p class = "stem2Box">
+				STEM II Slide Show
+			</p>
+			<p class = "phrase">
+			Attached is our slide show for the STEM II Fair. If the image is not loading, you can find it <a href = "Elements/stem2Slides.pdf" class = redLink>here</a>
+			</p>
+			<iframe src="Elements/stem2Slides.pdf"></iframe>
+		</div>
+	</body>
+</html>

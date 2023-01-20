@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- This is an html comment -->
+<html lang = "en"> 
+	<head>
+		<!-- Try to get a custom URL -->
+		<meta charset="UTF-8">
+		<title>French - Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="French_icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="French_icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="French_icon/favicon-16x16.png">
+		<link rel="manifest" href="French_icon/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			French
+		</div>
+		<div class = "sticky">
+		<div class = "content border">
+			<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		<div class = "empty" id = "FrenchBG">
+		<a href = "#Home"><img src = "Images/arrow.gif" class = "arrow" alt = "arrow"></a>
+		</div>
+		
+		<div class = "contentWrap border" id = "Home">
+			<div class = "header revealer">
+			<br>
+				French:
+			</div>
+			<p class = hidden>
+				<Strong>Taught by Mme. Wildfong.</Strong>
+			</p>
+			<br>
+			<p>
+				At the Academy, French and Spanish are taught immersively, meaning that students are expected to read, write, talk, and work in the target language. The use of English is minimized, so as to “immerse” the students in the language and thus teach it more effectively. Before this course, I had only taken Latin, so working and communicating in French is completely new to me. At the intermediate level, however, I am able to learn alongside my peers, which is a very rewarding experience.
+				<br>
+				<br>
+				<i>Click the Buttons to Jump Around!</i>
+			</p>
+		</div>
+		
+		<div class = "contentWrap border macroTitle" id = "WorkSamples">
+			<p class = "titleText">
+			Work Samples
+			<br>
+			<br>
+			<a href = "#MaMaison" class = shifter>Ma Maison</a>
+			&nbsp;
+			<a href = "#Recette" class = shifter>Cooking Project</a>
+			</p>
+			</div>
+			<div class = "parent"> 
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/MaMaison.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "MaMaison">
+			<p>Ma Maison
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = "shortDescription">This is the first piece of writing we did in French! I was very new at the language, and looking back I can definitely see my improvement from this point in time. The instructions, conception, and writing for this essay were all done in french, and we only used an approved dictionary to look up words. “Ma Maison” (“My House”) describes three rooms in my house and talks about some of the objects within them, complete with colors.
+		</p>
+		</div>
+		</div>
+		
+		<div class = "parent"> 
+		<div class = "contentWrap border displayRight">
+			<iframe src="Elements/Recette.pdf"></iframe>
+		</div>
+		<div class = "border infoLeft miniTitle" id = "Recette">
+			<p>Cooking Project
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoLeft">
+		<p class = "shortDescription">In this project, we were tasked with writing ourselves a recipe for a dish completely in french, and then giving instructions in french on how to make it! I chose to make Spaghetti Bolognese, one of my favorite dishes, and the presentation gives the ingredients as well as all of the steps I took! It was really fun giving this presentation completely in french, and I enjoyed hearing about all of my classmates' recipes.
+		</p>
+		</div>
+		</div>
+			
+	</body>
+</html>

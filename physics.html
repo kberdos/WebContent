@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- This is an html comment -->
+<html lang = "en">
+	<head>
+		<!-- Try to get a custom URL -->
+		<meta charset="UTF-8">
+		<title>Physics - Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="Physics_icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Physics_icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Physics_icon/favicon-16x16.png">
+		<link rel="manifest" href="Physics_icon/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			Physics
+		</div>
+		<div class = "sticky">
+			<div class = "content border"> 
+				<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		<div class = "empty" id = "PhysicsBG">
+		<a href = "#Home"><img src = "Images/arrow.gif" class = "arrow" alt = "arrow"></a>
+		</div>
+		<div class = "contentWrap border" id = "Home">
+			<div class = "header revealer">
+			<br>
+				Physics:
+			</div>
+			<p class = hidden>
+				<Strong>Taught by Mr. Ellis.</Strong>
+			</p>
+			<br>
+			<p>
+				The Physics program at Mass Academy covers the AP Physics curriculum over the span of one year, rather than two. In this course, which includes an optional calculus route, students are challenged with synthesizing the many concepts and finding the best way to approach complex problems. Collaboration is a core aspect of the course, as we are encouraged to help each other in order to collectively understand the difficult topics. The famous “Uber Problems” are individual problems designed to cover the core concepts of a given chapter, usually with multiple stages. Attached below are my solutions to two such problems. 
+				<br>
+				<br>
+				<i>Click the Buttons to Jump Around!</i>			
+			</p>
+		</div>		
+		
+		<div class = "contentWrap border macroTitle" id = "WorkSamples">
+			<p class = "titleText">
+			Work Samples
+			<br>
+			<br>
+			<a href = "#UberRocket" class = shifter>Uber Rocket</a>
+			&nbsp;
+			<a href = "#UberPulley" class = shifter>Uber Pulley</a>
+			</p>
+			</div>
+			
+		<div class = "parent"> 
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/UberRocket.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "UberRocket">
+			<p>Uber Rocket
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = "shortDescription">The first problem of the year was the Uber Rocket problem. This problem focuses on projectile motion and the fundamental ideas of displacement, velocity, and acceleration with respect to time. In the algebra version of the problem, there is more of a focus on kinematics, or the study of the causes and effects of motion. In the calculus version, the problem focuses on the relationship between the functions of displacement, velocity, and acceleration with respect to time, and how the calculus ideas of the derivative and integral apply to them. Shown is my solution to the calculus version of the problem.
+		</p>
+		</div>
+		</div>
+		
+		<div class = "parent"> 
+		<div class = "contentWrap border displayRight">
+			<iframe src="Elements/UberPulley.pdf"></iframe>
+		</div>
+		<div class = "border infoLeft miniTitle" id = "UberPulley">
+			<p>Uber Pulley
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoLeft">
+		<p class = "shortDescription">The second Uber Problem was mainly focused around the study of forces, and how they affect motion. In terms of calculus, more relationships between functions of displacement, velocity, and acceleration are experimented with, this time in respect to position as well as time. The problem ultimately breaks down to finding the coefficient of friction for a surface, which is a core concept introduced in this chapter. Another concept unique to calculus is the study of a chain with mass. Shown is my solution to the calculus version of the problem.
+		</p>
+		</div>
+		</div>
+		
+	
+			
+	</body>
+</html>

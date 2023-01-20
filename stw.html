@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- This is an html comment -->
+<html lang = "en">
+	<head>
+		<!-- Try to get a custom URL -->
+		<meta charset="UTF-8">
+		<title>STW - Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="STW_icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="STW_icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="STW_icon/favicon-16x16.png">
+		<link rel="manifest" href="STW_icon/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			STW
+		</div>
+		<div class = "sticky">
+			<div class = "content border"> 
+				<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		<div class = "contentWrap border">
+			<div class = "header revealer">
+				STW:
+			</div>
+			<p class = hidden>
+				<Strong>Taught by Dr. Crowthers.</Strong>
+			</p>
+			<br>
+			<p>
+				In Science and Technical Writing we develop our scientific writing skills, which come in handy since we have to write a lot of formal documents for our STEM project. Some notable documents we produce are our project notes, literature review, and project proposal. In this course, we also learn how to analyze scientific writing, do research, and make improvements on the writing of others. A lot of peer review takes place in the course, which is beneficial for the reviewer and reviewee. 
+			</p>
+		</div>
+		<div class = "parent"> 
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/proposal.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "Proposal">
+			<p>Project Brief
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = "shortDescription">This document is important to me since it is the first piece of scientific writing that we did officially for the year. In this project proposal I introduce my idea for the project and describe the steps I will take in order to accomplish it. At this point the work was rough, so for a more final version of the project please see my STEM page. There is background information in the document from the research I had done as well as materials, methodology, and a timeline. Since my project is a CS project, there were not many materials or potential risks.
+
+<br><br>If the PDF is not loading, you can view the document <a href = "Elements/proposal.pdf" class = redLink>here</a>
+		</p>
+		</div>
+		</div>
+		<div class = "parent"> 
+		<div class = "contentWrap border displayRight">
+			<iframe src="Elements/litReview.pdf"></iframe>
+		</div>
+		<div class = "border infoLeft miniTitle" id = "EasingTraffic">
+			<p>Literature Review
+			</p>
+		</div>
+		<div class = "contentWrap border infoLeft">
+		<p class = "shortDescription">The Literature Review is important since it presents the research I have done on similar projects and articles that surround the scope of my project. I talk about advanced Search and Sorting Algorithms and their applications, with a special focus around the A-Star algorithm, which is the basis for my project. Included in the Literature review are some articles traffic prediction models and utilization of GPS services, which could be applied as future extensions for my project. 
+		
+<br><br>If the PDF is not loading, you can view the document <a href = "Elements/litReview.pdf" class = redLink>here</a>
+
+		</p>
+		</div>
+		</div>
+		
+		<div class = "parent"> 
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/projectNotes.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "Proposal">
+			<p>Project Notes
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = "shortDescription"> The project notes act as the foundation for the Literature Review and the project as a whole. Each article I read and analyzed has its own box with notes, a summary, keywords, and more information. There are citations to every article, as well as cited references to follow up on. Someone who wishes to learn more about the topics covered in my project can reference any of the articles or patents shown in my project notes.
+		<br><br>If the PDF is not loading, you can view the document <a href = "Elements/projectNotes.pdf" class = redLink>here</a>
+		</p>
+		</div>
+		</div>
+			
+	</body>
+</html>

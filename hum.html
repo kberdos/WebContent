@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- This is an html comment -->
+<html lang = "en">
+	<head>
+		<!-- Try to get a custom URL -->
+		<meta charset="UTF-8">
+		<title>HUM - Kaz's Website</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="HUM_icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="HUM_icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="HUM_icon/favicon-16x16.png">
+		<link rel="manifest" href="HUM_icon/site.webmanifest">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class = "title border">
+			Humanities (HUM)
+		</div>
+		<div class = "sticky">
+			<div class = "content border"> 
+				<div class = "menuItem">
+					<a href = "index.html">Home</a>
+				</div>
+				<div class = "menuItem">
+					<a href = "personal.html">Personal</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "math.html">Math</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "physics.html">Physics</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "cs.html">CS</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "hum.html">HUM</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "french.html">French</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem.html">STEM I</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stw.html">STW</a>
+				</div>
+				<div class = "menuItem academics">
+					<a href = "stem2.html">STEM II</a>
+				</div>
+			</div>
+		</div>
+		<div class = "empty" id = "HUMBG">
+		<a href = "#Home"><img src = "Images/arrow.gif" class = "arrow" alt = "arrow"></a>
+		</div>
+		<div class = "contentWrap border" id = "Home">
+			<div class = "header revealer">
+			<br>
+				HUM:
+			</div>
+			<p class = hidden>
+				<Strong>Taught by Ms. Small.</Strong>
+			</p>
+			<br>
+			<p>
+				The Humanities program at Mass Academy combines the typical english and history classes, with the major focus of the year being around humanity. More specifically, “What does it mean to be human?” is our essential question. Each unit we cover goes over a different aspect of humanity, such as the struggle against technology, race, rhetoric, tradition, the brain, etc. In a nutshell, humanities not only teaches us about the world around us and how to interpret it, but it also teaches us crucial information about ourselves and our intricacies as humans.
+				<br>
+				<br>
+				<i>Click the Buttons to Jump Around!</i>
+			</p>
+		</div>
+		
+		<div class = "contentWrap border macroTitle" id = "WorkSamples">
+			<p class = "titleText">
+			Work Samples
+			<br>
+			<br>
+			<a href = "#Bradbury" class = shifter>Bradbury Essay</a>
+			&nbsp;
+			<a href = "#Satire" class = shifter>Satirical Analysis</a>
+			</p>
+			</div>
+			<div class = "parent"> 
+		<div class = "contentWrap border displayLeft">
+			<iframe src="Elements/BradburyEssay.pdf"></iframe>
+		</div>
+		<div class = "border infoRight miniTitle" id = "Bradbury">
+			<p>Bradbury Essay
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoRight">
+		<p class = "shortDescription">The Bradbury Essay was the first formal essay we did in Humanities! In this essay I analyze two short stories by Ray Bradbury, an author known for his dystopian literature. The stories revolve around technological advancements taking over human life, eventually causing downfall of humanity. In reviewing these short stories I uncover revelations on what it could mean to be truly human, and how the definition of humanity is more complicated than it seems.
+		</p>
+		</div>
+		</div>
+		
+		<div class = "parent"> 
+		<div class = "contentWrap border displayRight">
+			<iframe src="Elements/SatiricalAnalysis.pdf"></iframe>
+		</div>
+		<div class = "border infoLeft miniTitle" id = "Satire">
+			<p>Satirical Analysis
+			<br>
+			<br>
+			<a href = "#WorkSamples" class = shifter>(Back to Top)</a>
+			</p>
+		</div>
+		<div class = "contentWrap border infoLeft">
+		<p class = "shortDescription">Satire was one of my favorite topics in Humanities this year. We explored the different uses of satire in history, and studied its applications in humor and criticism. “A Modest Proposal” is one of the most famous pieces of satire to date, and in my satirical analysis I break down the work and explain why it is effective at illuminating Swift’s perspective on the wealth disparity in Ireland. 
+		</p>
+		</div>
+		</div>
+		
+	</body>
+</html>
